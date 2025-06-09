@@ -1,0 +1,2 @@
+J:/information/mobile apps/Project GitHub/Calculator/android/app/.cxx/Debug/3h845733/arm64-v8a/CMakeFiles/edit_cache.dir
+J:/information/mobile apps/Project GitHub/Calculator/android/app/.cxx/Debug/3h845733/arm64-v8a/CMakeFiles/rebuild_cache.dir
