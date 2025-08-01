@@ -45,7 +45,8 @@ class OperationsCubit extends Cubit<InitalOperations> {
     emit(InitalOperations(input: newInput, result: newResult));
   }
 
-  void calculate() {
+
+  void calculate() async{
     try {
       Parser p = Parser();
       Expression exp = p.parse(state.input);
@@ -53,12 +54,17 @@ class OperationsCubit extends Cubit<InitalOperations> {
       double eval = exp.evaluate(EvaluationType.REAL, cm);
 
       String result = _formatResult(eval);
-
+     
       emit(InitalOperations(input: state.input, result: result));
+   
     } catch (e) {
       emit(InitalOperations(input: state.input, result: " "));
     }
   }
+
+
+
+
 
   String _formatResult(double value) {
     if (value == value.toInt()) {

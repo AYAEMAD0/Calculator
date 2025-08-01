@@ -5,7 +5,6 @@ class AppColors {
   static Color background(bool isDark) =>
       isDark ? const Color(0xff17171c) : const Color(0xfff1f2f3);
 
-  // ألوان أزرار أول 3 (C, +/- , %)
   static Color topButtons(bool isDark) =>
       isDark ? const Color(0xff4e505f) : const Color(0xffd2d3da);
 

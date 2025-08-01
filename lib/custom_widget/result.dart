@@ -17,7 +17,7 @@ class Result extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  Container(
-                    height: screenHeight * 0.12,
+                    height: screenHeight * 0.13,
                     width: screenWidth * 0.9,
                     alignment: Alignment.centerRight,
                     child: Text(

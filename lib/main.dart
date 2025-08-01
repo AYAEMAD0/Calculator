@@ -4,14 +4,15 @@ import 'package:calculator/Screens/home.dart';
 import 'package:calculator/logic/themes/Themes_cubit.dart';
 import 'package:calculator/logic/operations/Operations_cubit.dart';
 
-void main() {
+
+void main()async {
   runApp(
     MultiBlocProvider(
       providers: [
         BlocProvider(create: (context) => ThemesCubit()),
         BlocProvider(create: (context) => OperationsCubit()),
       ],
-      child: MyApp(),
+      child: const MyApp(),
     ),
   );
 }
